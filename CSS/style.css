@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #1f2933;
+}
+
+.navbar {
+    background-color: #0b3d35 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #5ee7b7 !important;
+}
+
+.hero-section {
+    padding: 150px 0 100px;
+    background-color: #0b3d35;
+    color: white;
+}
+
+.hero-badge {
+    color: #5ee7b7;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero-title span {
+    color: #5ee7b7;
+    display: block;
+}
+
+.hero-text {
+    color: #d1d5db;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn-primary-custom {
+    background-color: #5ee7b7;
+    color: #073b33;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary-custom:hover {
+    background-color: white;
+    color: #0b3d35;
+}
+
+.btn-outline-custom {
+    color: white;
+    border: 1px solid white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-outline-custom:hover {
+    background-color: white;
+    color: #0b3d35;
+}
+
+.finance-card {
+    background-color: white;
+    color: #1f2933;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 380px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.finance-card-top {
+    display: flex;
+    justify-content: space-between;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+.balance-label {
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.balance-value {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0b3d35;
+}
+
+.finance-line {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 25px 0;
+}
+
+.finance-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.finance-stats small {
+    display: block;
+    color: #64748b;
+}
+
+.finance-stats strong {
+    color: #0b3d35;
+}
+
+.chart-bars {
+    height: 100px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.chart-bars span {
+    flex: 1;
+    background-color: #5ee7b7;
+    border-radius: 5px 5px 0 0;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-tag {
+    color: #0b8f70;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+.challenge-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    border-color: #5ee7b7;
+}
+
+.challenge-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #e0f8ef;
+    color: #0b8f70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.challenge-number {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.challenge-card h3 {
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.challenge-card p {
+    color: #64748b;
+    line-height: 1.6;
+    min-height: 70px;
+}
+
+.challenge-link {
+    color: #0b8f70;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.challenge-link:hover {
+    color: #063f34;
+}
+
+.about-section {
+    padding: 80px 0;
+    background-color: #eaf4f1;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+.about-section p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.team-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.team-card h3 {
+    margin: 10px 0 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #d9f7ec;
+    color: #0b8f70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.team-member small {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.team-info {
+    margin-top: 20px;
+}
+
+.team-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #0b3d35;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer small {
+    color: #b8d8d0;
+}
+
+@media (max-width: 768px) {
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-section {
+        padding: 120px 20px 70px;
+    }
+
+    .finance-card {
+        margin-top: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .finance-card {
+        padding: 20px;
+    }
+}
