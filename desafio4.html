@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comparação de Cartões</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Finanças Pessoais
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio1.html">
+                            Empréstimos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio2.html">
+                            Investimentos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio3.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="desafio4.html">
+                            Cartões
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio5.html">
+                            Despesas
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    DESAFIO 4
+                </span>
+
+                <h1>
+                    Comparação de Cartões de Crédito
+                </h1>
+
+                <p>
+                    Compare dois cartões e descubra qual possui
+                    as melhores condições.
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-10 col-lg-8">
+
+                    <div class="finance-card">
+
+                        <h4 class="mb-4">
+                            Cartão 1
+                        </h4>
+
+                        <div class="mb-3">
+
+                            <label for="nome1" class="form-label">
+                                Nome do cartão
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome1"
+                                class="form-control"
+                                placeholder="Ex: Cartão A">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="limite1" class="form-label">
+                                Limite
+                            </label>
+
+                            <input
+                                type="number"
+                                id="limite1"
+                                class="form-control"
+                                placeholder="Ex: 3000">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="anuidade1" class="form-label">
+                                Anuidade
+                            </label>
+
+                            <input
+                                type="number"
+                                id="anuidade1"
+                                class="form-control"
+                                placeholder="Ex: 120">
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label for="cashback1" class="form-label">
+                                Cashback (%)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="cashback1"
+                                class="form-control"
+                                placeholder="Ex: 2">
+
+                        </div>
+
+                        <hr>
+
+                        <h4 class="mb-4">
+                            Cartão 2
+                        </h4>
+
+                        <div class="mb-3">
+
+                            <label for="nome2" class="form-label">
+                                Nome do cartão
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome2"
+                                class="form-control"
+                                placeholder="Ex: Cartão B">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="limite2" class="form-label">
+                                Limite
+                            </label>
+
+                            <input
+                                type="number"
+                                id="limite2"
+                                class="form-control"
+                                placeholder="Ex: 5000">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="anuidade2" class="form-label">
+                                Anuidade
+                            </label>
+
+                            <input
+                                type="number"
+                                id="anuidade2"
+                                class="form-control"
+                                placeholder="Ex: 200">
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label for="cashback2" class="form-label">
+                                Cashback (%)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="cashback2"
+                                class="form-control"
+                                placeholder="Ex: 1">
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary-custom w-100"
+                            onclick="compararCartoes()">
+
+                            Comparar cartões
+
+                        </button>
+
+                        <div id="resultado" class="mt-4"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <p>
+                © 2026 Portal de Finanças Pessoais
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="./JS/desafio4.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
